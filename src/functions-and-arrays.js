@@ -246,6 +246,8 @@ function greatestProduct(matrix) {
   return highestProduct;
 }
 
+let aa = 12;
+
 
 
 
