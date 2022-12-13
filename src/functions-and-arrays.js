@@ -219,32 +219,6 @@ const matrix = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-function greatestProduct(matrix) {
-  let highestProduct = 1;
-
-  for (let i = 0; i < matrix.length -3; i++) {
-    for (let j = 0; j < matrix[i].length - 3; j++) {
-      let horizontalProduct =
-        matrix[j][i] * matrix[j + 1][i] * matrix[j + 2][i] * matrix[j + 3][i];
-      let verticalProduct =
-        matrix[j][i] * matrix[j][i + 1] * matrix[j][i + 2] * matrix[j][i + 3];
-
-      if (horizontalProduct > verticalProduct) {
-        if (highestProduct < horizontalProduct) {
-          highestProduct = horizontalProduct;
-        }
-      } else if (horizontalProduct < verticalProduct) {
-        highestProduct = verticalProduct;
-      } else if(horizontalProduct === verticalProduct){
-        if(horizontalProduct > highestProduct){
-          highestProduct = horizontalProduct;
-        }
-      }
-      
-    }
-  }
-  return highestProduct;
-}
 
 
 
