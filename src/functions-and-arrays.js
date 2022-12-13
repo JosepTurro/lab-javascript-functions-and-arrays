@@ -38,10 +38,15 @@ console.log (findLongestWord(words));
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbersArr) {
+
   let sum = 0;
   numbersArr.forEach(element => {sum += element});
   return sum;
 }
+
+
+
+
 
 /////
 
